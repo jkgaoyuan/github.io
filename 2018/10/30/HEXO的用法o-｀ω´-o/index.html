@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="JKGAOYUAN&#39;S SITE">
 <meta property="og:description" content="关于HEXO怎么用  2018年10月30日 01:02:12 天气多云 气温 5° 别问我大晚上怎么知道天气怎么样的。:-P 最近的天气好凉啊  主要用来记录一下自己在日常使用HEXO和NPM中所遇到的问题和解决办法。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-17T15:02:13.535Z">
+<meta property="og:updated_time" content="2019-03-28T10:33:58.354Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HEXO的用法o(｀ω´ )o">
 <meta name="twitter:description" content="关于HEXO怎么用  2018年10月30日 01:02:12 天气多云 气温 5° 别问我大晚上怎么知道天气怎么样的。:-P 最近的天气好凉啊  主要用来记录一下自己在日常使用HEXO和NPM中所遇到的问题和解决办法。">
@@ -350,7 +350,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  295 字
+                  550 字
                 </span>
               
 
@@ -366,7 +366,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  2 分钟
                 </span>
               
             </div>
@@ -407,8 +407,15 @@
 </ul>
 <p>没错就是这个错误，一番Google后依然没有解决问题。</p>
 <p>当时的我依然没有意识到自己的错误在哪里（其实这个命令因该在自己项目的路径下执行，然鹅我没有我直接新建了以一个终端在里面执行结果就是死活报错）</p>
-<p>放一个感觉很厉害的<a href="https://jan9th.github.io/2017/04/22/Hexo-NexT-%E4%BD%BF%E7%94%A8%E4%B8%AD%E7%9A%84%E5%B0%8F%E7%BB%86%E8%8A%82/" target="_blank" rel="noopener">链接</a></p>
+<p>放一个感觉很厉害的<a href="https://jan9th.github.io/2017/04/22/Hexo-NexT-%E4%BD%BF%E7%94%A8%E4%B8%AD%E7%9A%84%E5%B0%8F%E7%BB%86%E8%8A%82/" target="_blank" rel="noopener">链接</a> <a href="https://jan9th.github.io/2017/04/22/Hexo-NexT-%E4%BD%BF%E7%94%A8%E4%B8%AD%E7%9A%84%E5%B0%8F%E7%BB%86%E8%8A%82/" target="_blank" rel="noopener">再放一个</a></p>
 <p>似乎挺全面的，我拿小本本记下来。<br>那下次再见了prprpr。</p>
+<p>###如何创建文章 </p>
+<p><code>hexo new [layout] &lt;title&gt;</code></p>
+<p>我将默认layout的属性设定为<code>post</code>了；</p>
+<p>###布局layout<br>有三个 post、page和draf属性<br>这三个属性分别对应不同的路径<br>post source/_posts<br>page source<br>draft source/_drafts<br>我们可以在_config.yml 中修改 <code>default_layout</code>的参数来修改默认属性        </p>
+<p>草稿 draft<br>草稿默认不会显示在页面上，但是我们可以在执行时加上 –draft，或者将render_drafts 参数设置为 true 来预览。<br><code>hexo publish [layout] &lt;title&gt;</code></p>
+<h3 id="模版"><a href="#模版" class="headerlink" title="模版"></a>模版</h3><p>我们在使用命令 hexo new ‘postname’的时候 hexo 会在 scaffolds 文件夹中去寻找post.md文件来新建文章。</p>
+<p>下面是可以添加的参数<br>title: 使用Hexo搭建个人博客<br>layout: post<br>date: 2014-03-03 19:07:43<br>comments: true    （<a href="https://zobgo.com/Hexo/hexo-next-add-comment-and-search.html" target="_blank" rel="noopener">在安装插件后使用-参考</a>）<br>categories: Blog<br>tags: [Hexo]<br>keywords: Hexo, Blog （<a href="https://blog.csdn.net/zaoan_wx/article/details/50859675" target="_blank" rel="noopener">seo优化</a>）<br>description: 生命在于折腾，又把博客折腾到Hexo了。给Hexo点赞。<br>(对于文章的描述，会直接显示在文章的最前端和阅读文章时的头部)</p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=22725706&auto=0&height=66"></iframe>
 
       
@@ -620,7 +627,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装HEXO插件"><span class="nav-number">1.</span> <span class="nav-text">安装HEXO插件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装HEXO插件"><span class="nav-number">1.</span> <span class="nav-text">安装HEXO插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模版"><span class="nav-number">2.</span> <span class="nav-text">模版</span></a></li></ol></div>
             
 
           </div>
